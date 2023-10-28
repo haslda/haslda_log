@@ -13,7 +13,7 @@ def log(msg, source = "unknown", level = "INF", tag=""):
         source = source.replace("\\", "/")
         source = source[(source.rfind("/") + 1):] # extract name of source file (without the path)
         if len(source) > 20:
-            source = "..." + source[-17:] # limit length to 20 digits
+            source = "..." + source[-17:] # limit length to 20 digits 
     except:
         source = "unknown"
     source = source + (20 - len(source)) * " " # make caller exactly 20 digits long
